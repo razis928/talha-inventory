@@ -202,7 +202,6 @@ function ErpApp() {
         <JobOrderFormPage
           mode={formAction}
           inventory={inventory}
-          units={inventoryData.units}
           customers={customerNames}
           record={record}
           onBack={() => closeForm('job-orders')}

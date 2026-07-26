@@ -34,7 +34,6 @@ interface ConsumeDraft {
 interface JobOrderFormPageProps {
   mode: 'add' | 'edit';
   inventory: InventoryItem[];
-  units: string[];
   customers: string[];
   record?: JobOrderApi;
   onBack: () => void;
@@ -52,6 +51,8 @@ const PAYMENT_TERMS = [
   '45 days after delivery',
   '60 days after delivery',
 ];
+const JOB_LINE_UOMS = ['Box', 'Sheet'] as const;
+const DEFAULT_JOB_LINE_UOM = JOB_LINE_UOMS[0];
 
 function todayIso() {
   return new Date().toISOString().slice(0, 10);
@@ -63,7 +64,9 @@ function mapRecordLines(record: JobOrderApi): LineDraft[] {
     lineId: line.id,
     itemId: line.item_id != null ? String(line.item_id) : '',
     itemName: line.item_name ?? '',
-    unit: line.unit ?? '',
+    unit: line.unit && (JOB_LINE_UOMS as readonly string[]).includes(line.unit)
+      ? line.unit
+      : line.unit || DEFAULT_JOB_LINE_UOM,
     quality: line.quality ?? '',
     colour: line.colour ?? '',
     size: String(line.size ?? ''),
@@ -75,14 +78,14 @@ function mapRecordLines(record: JobOrderApi): LineDraft[] {
   }));
 }
 
-function newLine(finishedItems: InventoryItem[], units: string[]): LineDraft {
+function newLine(finishedItems: InventoryItem[]): LineDraft {
   const item = finishedItems[0];
   return {
     key: `line-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
     lineId: null,
     itemId: item?.id ?? '',
     itemName: item?.name ?? '',
-    unit: item?.unit ?? units[0] ?? 'KG',
+    unit: DEFAULT_JOB_LINE_UOM,
     quality: '',
     colour: '',
     size: item ? String(item.size || '') : '',
@@ -119,7 +122,6 @@ function toCustomerInput(data: Record<string, unknown>): CustomerInput {
 export default function JobOrderFormPage({
   mode,
   inventory,
-  units,
   customers,
   record,
   onBack,
@@ -149,7 +151,7 @@ export default function JobOrderFormPage({
   const [freight, setFreight] = useState(Number(record?.freight_charges ?? 0));
   const [lines, setLines] = useState<LineDraft[]>(() => {
     if (record?.lines?.length) return mapRecordLines(record);
-    return [newLine(finishedItems, units)];
+    return [newLine(finishedItems)];
   });
   const [saving, setSaving] = useState(false);
   const [dispatching, setDispatching] = useState(false);
@@ -228,7 +230,6 @@ export default function JobOrderFormPage({
       updateLine(key, {
         itemId: match.id,
         itemName: match.name,
-        unit: match.unit,
         size: String(match.size || ''),
         rate: Number(match.sellingPrice || match.costPrice),
       });
@@ -550,7 +551,7 @@ export default function JobOrderFormPage({
             <button
               type="button"
               className="erp-btn-ghost flex items-center gap-1"
-              onClick={() => setLines((prev) => [...prev, newLine(finishedItems, units)])}
+              onClick={() => setLines((prev) => [...prev, newLine(finishedItems)])}
             >
               <Plus size={14} />
               Add item
@@ -603,22 +604,20 @@ export default function JobOrderFormPage({
                       </td>
                       <td>
                         <select
-                          value={line.unit}
+                          value={
+                            (JOB_LINE_UOMS as readonly string[]).includes(line.unit)
+                              ? line.unit
+                              : line.unit || DEFAULT_JOB_LINE_UOM
+                          }
                           onChange={(e) => updateLine(line.key, { unit: e.target.value })}
                           className="erp-classic-select w-24"
-                          disabled={Boolean(line.itemId) || dispatched}
-                          title={
-                            dispatched
-                              ? 'UOM locked — quantity already dispatched'
-                              : line.itemId
-                                ? 'UOM from inventory item'
-                                : undefined
-                          }
+                          disabled={dispatched}
+                          title={dispatched ? 'UOM locked — quantity already dispatched' : undefined}
                         >
-                          {!units.includes(line.unit) && line.unit ? (
+                          {!(JOB_LINE_UOMS as readonly string[]).includes(line.unit) && line.unit ? (
                             <option value={line.unit}>{line.unit}</option>
                           ) : null}
-                          {units.map((u) => (
+                          {JOB_LINE_UOMS.map((u) => (
                             <option key={u} value={u}>{u}</option>
                           ))}
                         </select>
