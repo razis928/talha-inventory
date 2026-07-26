@@ -170,7 +170,7 @@ export const INVENTORY_FILTERS: FilterDef[] = [
     key: 'category',
     label: 'Category',
     type: 'select',
-    options: ['All', 'Ink', 'Glue', 'Cligate', 'Dory', 'Packaging Material', 'Reel', 'Roll', 'Finished Products'],
+    options: ['All', 'Ink', 'Glue', 'Cligate', 'Dory', 'Packaging Material', 'Reel', 'Roll', 'Paper', 'Finished Products'],
   },
 ];
 
