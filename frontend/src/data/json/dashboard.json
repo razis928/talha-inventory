@@ -1,0 +1,37 @@
+{
+  "title": "Executive Dashboard",
+  "subtitle": "Real-time overview of manufacturing operations",
+  "stats": [
+    { "id": "inv-value", "label": "Total Inventory Value", "value": "Rs 1,284,500", "change": "+4.2%", "trend": "up", "icon": "layers" },
+    { "id": "today-sales", "label": "Today's Sales", "value": "Rs 24,850", "change": "+12.5%", "trend": "up", "icon": "trending-up" },
+    { "id": "monthly-purchases", "label": "Monthly Purchases", "value": "Rs 186,200", "change": "-2.1%", "trend": "down", "icon": "shopping-cart" },
+    { "id": "pending-orders", "label": "Pending Orders", "value": "18", "change": "+3", "trend": "up", "icon": "clock" }
+  ],
+  "lowStockAlerts": [
+    { "id": "ls-1", "name": "Flex 340 G", "sku": "FLX-340-G", "stock": 12, "minStock": 48, "category": "Glue" },
+    { "id": "ls-2", "name": "Cligate Ultra", "sku": "CLG-ULT-44", "stock": 0, "minStock": 100, "category": "Cligate" },
+    { "id": "ls-3", "name": "Ink Base Cyan", "sku": "INK-CYN-02", "stock": 8, "minStock": 50, "category": "Ink" }
+  ],
+  "recentTransactions": [
+    { "id": "tx-1", "type": "sale", "reference": "SO-2024-1142", "party": "PrintMax Industries", "amount": 4850, "date": "2024-06-06", "status": "Completed" },
+    { "id": "tx-2", "type": "purchase", "reference": "PO-2024-0892", "party": "Starlight Chemicals", "amount": 12450, "date": "2024-06-05", "status": "Pending" },
+    { "id": "tx-3", "type": "stock-in", "reference": "GRN-2024-0441", "party": "Bulk Pack Solutions", "amount": 3200, "date": "2024-06-05", "status": "Received" },
+    { "id": "tx-4", "type": "sale", "reference": "SO-2024-1140", "party": "FlexoPrint Ltd", "amount": 9200, "date": "2024-06-04", "status": "Completed" }
+  ],
+  "salesChart": {
+    "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    "sales": [82000, 91000, 78000, 105000, 112000, 98000],
+    "purchases": [65000, 72000, 68000, 84000, 91000, 86000]
+  },
+  "topProducts": [
+    { "id": "tp-1", "name": "Gandolla Premium", "unitsSold": 1240, "revenue": 396800, "category": "Ink" },
+    { "id": "tp-2", "name": "Dory Varnish", "unitsSold": 890, "revenue": 169100, "category": "Dory" },
+    { "id": "tp-3", "name": "Vinyl + Lamination", "unitsSold": 620, "revenue": 49600, "category": "Packaging Material" },
+    { "id": "tp-4", "name": "Flex 340 G", "unitsSold": 480, "revenue": 40800, "category": "Glue" }
+  ],
+  "vendorPerformance": [
+    { "id": "vp-1", "name": "Starlight Chemicals", "onTimeDelivery": 98.5, "qualityScore": 4.9, "totalOrders": 42, "status": "Preferred" },
+    { "id": "vp-2", "name": "Bulk Pack Solutions", "onTimeDelivery": 91.2, "qualityScore": 4.2, "totalOrders": 28, "status": "Standard" },
+    { "id": "vp-3", "name": "MetalTech Corp", "onTimeDelivery": 76.4, "qualityScore": 3.1, "totalOrders": 15, "status": "Under Review" }
+  ]
+}

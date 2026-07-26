@@ -1,0 +1,79 @@
+{
+  "title": "Purchase Orders",
+  "subtitle": "Manage procurement and supplier orders",
+  "stats": [
+    { "label": "Total POs", "value": 42 },
+    { "label": "Pending Approval", "value": 8 },
+    { "label": "Pending GRN", "value": 5 },
+    { "label": "Monthly Spend", "value": "Rs 186,200" }
+  ],
+  "orders": [
+    {
+      "id": "po-1",
+      "poNumber": "PO-2024-0892",
+      "vendor": "Starlight Chemicals",
+      "itemId": "",
+      "itemName": "Kraft Paper",
+      "gsm": 120,
+      "size": 40,
+      "sizeUnit": "KG",
+      "quantity": 200,
+      "totalAmount": 12450,
+      "deliveryDate": "2024-06-12",
+      "status": "Pending",
+      "createdBy": "James Wilson"
+    },
+    {
+      "id": "po-2",
+      "poNumber": "PO-2024-0891",
+      "vendor": "Bulk Pack Solutions",
+      "itemId": "",
+      "itemName": "Packaging Film Roll",
+      "gsm": 80,
+      "size": 20,
+      "sizeUnit": "Roll",
+      "quantity": 50,
+      "totalAmount": 4820,
+      "deliveryDate": "2024-06-10",
+      "status": "Approved",
+      "createdBy": "James Wilson"
+    },
+    {
+      "id": "po-3",
+      "poNumber": "PO-2024-0890",
+      "vendor": "MetalTech Corp",
+      "itemId": "",
+      "itemName": "Duplex Board",
+      "gsm": 200,
+      "size": 30,
+      "sizeUnit": "KG",
+      "quantity": 500,
+      "totalAmount": 28900,
+      "deliveryDate": "2024-06-08",
+      "status": "Received",
+      "createdBy": "Sarah Miller"
+    },
+    {
+      "id": "po-4",
+      "poNumber": "PO-2024-0889",
+      "vendor": "Industrial Logistics Ltd",
+      "itemId": "",
+      "itemName": "Ink Solvent",
+      "gsm": 0,
+      "size": 0,
+      "sizeUnit": "Liter",
+      "quantity": 1000,
+      "totalAmount": 1200,
+      "deliveryDate": "2024-06-05",
+      "status": "Received",
+      "createdBy": "James Wilson"
+    }
+  ],
+  "grnList": [
+    { "id": "grn-1", "grnNumber": "GRN-2024-0441", "poNumber": "PO-2024-0890", "vendor": "MetalTech Corp", "receivedDate": "2024-06-05", "status": "Completed" },
+    { "id": "grn-2", "grnNumber": "GRN-2024-0440", "poNumber": "PO-2024-0889", "vendor": "Industrial Logistics Ltd", "receivedDate": "2024-06-04", "status": "Completed" }
+  ],
+  "returns": [
+    { "id": "pr-1", "returnNumber": "PR-2024-0012", "vendor": "MetalTech Corp", "amount": 890, "reason": "Damaged goods", "status": "Pending" }
+  ]
+}

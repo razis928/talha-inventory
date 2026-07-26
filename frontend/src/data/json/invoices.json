@@ -1,0 +1,13 @@
+{
+  "title": "Invoices",
+  "subtitle": "Sales and purchase invoice management",
+  "invoices": [
+    { "id": "inv-doc-1", "invoiceNumber": "INV-2024-1142", "party": "PrintMax Industries", "type": "Sales", "amount": 4850, "date": "2024-06-06", "dueDate": "2024-06-20", "status": "Unpaid" },
+    { "id": "inv-doc-2", "invoiceNumber": "INV-2024-1141", "party": "FlexoPrint Ltd", "type": "Sales", "amount": 9200, "date": "2024-06-05", "dueDate": "2024-06-19", "status": "Paid" },
+    { "id": "inv-doc-3", "invoiceNumber": "PINV-2024-0442", "party": "Starlight Chemicals", "type": "Purchase", "amount": 12450, "date": "2024-06-05", "dueDate": "2024-06-25", "status": "Pending" }
+  ],
+  "reviewedInvoices": [
+    { "id": "rinv-1", "invoiceNumber": "INV-2024-1140", "party": "ColorTech Solutions", "amount": 3200, "reviewedBy": "Sarah Miller", "reviewDate": "2024-06-04", "status": "Approved" },
+    { "id": "rinv-2", "invoiceNumber": "INV-2024-1138", "party": "PrintMax Industries", "amount": 6800, "reviewedBy": "Alex Sterling", "reviewDate": "2024-06-02", "status": "Approved" }
+  ]
+}

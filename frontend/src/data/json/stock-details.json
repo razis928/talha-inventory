@@ -1,0 +1,33 @@
+{
+  "title": "Stock Details",
+  "subtitle": "Batch tracking and warehouse stock movements",
+  "selectedItem": {
+    "id": "inv-3",
+    "name": "Flex 340 G",
+    "sku": "FLX-340-G",
+    "type": "Raw",
+    "category": "Glue",
+    "costPrice": 32,
+    "sellingPrice": 32,
+    "stockLevel": 12,
+    "minStock": 48,
+    "unit": "KG",
+    "warehouse": "North Storage, Bin 12",
+    "barcode": "8901234567003"
+  },
+  "batches": [
+    { "id": "b-1", "batchNo": "BATCH-2024-0412", "quantity": 8, "unit": "KG", "mfgDate": "2024-03-15", "expiryDate": "2025-03-15", "warehouse": "North Storage" },
+    { "id": "b-2", "batchNo": "BATCH-2024-0388", "quantity": 4, "unit": "KG", "mfgDate": "2024-02-20", "expiryDate": "2025-02-20", "warehouse": "North Storage" }
+  ],
+  "stockHistory": [
+    { "id": "sh-1", "date": "2024-06-06 09:15", "type": "Stock Out", "quantity": -5, "reference": "SO-2024-1142", "user": "Admin User", "balance": 12 },
+    { "id": "sh-2", "date": "2024-06-04 14:30", "type": "Stock In", "quantity": 20, "reference": "GRN-2024-0441", "user": "Warehouse Manager", "balance": 17 },
+    { "id": "sh-3", "date": "2024-06-01 11:00", "type": "Adjustment", "quantity": -3, "reference": "ADJ-2024-0088", "user": "Admin User", "balance": -3 },
+    { "id": "sh-4", "date": "2024-05-28 16:45", "type": "Transfer", "quantity": 10, "reference": "TRF-2024-0021", "user": "Warehouse Manager", "balance": 0 }
+  ],
+  "warehouseStock": [
+    { "warehouse": "East Wing", "quantity": 0, "capacity": 2000 },
+    { "warehouse": "North Storage", "quantity": 12, "capacity": 500 },
+    { "warehouse": "Central Hub", "quantity": 0, "capacity": 1500 }
+  ]
+}

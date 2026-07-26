@@ -1,0 +1,62 @@
+{
+  "title": "Gate Pass Management",
+  "subtitle": "Material dispatch, receiving and vehicle tracking",
+  "stats": [
+    { "label": "Inward Today", "value": 6 },
+    { "label": "Outward Today", "value": 4 },
+    { "label": "Pending Approval", "value": 3 },
+    { "label": "Total This Month", "value": 142 }
+  ],
+  "inwardPasses": [
+    {
+      "id": "gp-in-1",
+      "passNumber": "GP-IN-2024-0882",
+      "vendor": "Starlight Chemicals",
+      "productName": "Ink Base Cyan",
+      "size": "200 KG",
+      "quantityPcs": 24,
+      "vehicleNo": "KHI-4521",
+      "driver": "Ahmed Khan",
+      "date": "2024-06-06",
+      "status": "Approved"
+    },
+    {
+      "id": "gp-in-2",
+      "passNumber": "GP-IN-2024-0881",
+      "vendor": "Bulk Pack Solutions",
+      "productName": "Packaging Film",
+      "size": "50 Rolls",
+      "quantityPcs": 50,
+      "vehicleNo": "KHI-7890",
+      "driver": "Bilal Ahmed",
+      "date": "2024-06-05",
+      "status": "Pending"
+    }
+  ],
+  "outwardPasses": [
+    {
+      "id": "gp-out-1",
+      "passNumber": "GP-OUT-2024-0445",
+      "customer": "PrintMax Industries",
+      "productName": "Gandolla Premium",
+      "size": "100 Liters",
+      "quantityPcs": 12,
+      "vehicleNo": "KHI-3344",
+      "driver": "Hassan Ali",
+      "date": "2024-06-06",
+      "status": "Approved"
+    },
+    {
+      "id": "gp-out-2",
+      "passNumber": "GP-OUT-2024-0444",
+      "customer": "FlexoPrint Ltd",
+      "productName": "Dory Varnish",
+      "size": "80 Liters",
+      "quantityPcs": 8,
+      "vehicleNo": "KHI-5566",
+      "driver": "Usman Raza",
+      "date": "2024-06-05",
+      "status": "Dispatched"
+    }
+  ]
+}

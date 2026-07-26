@@ -1,0 +1,46 @@
+{
+  "title": "Reports & Analytics",
+  "subtitle": "Business intelligence and exportable reports",
+  "reportCategories": [
+    {
+      "id": "inv-reports",
+      "name": "Inventory Reports",
+      "reports": [
+        { "id": "r-1", "name": "Stock Valuation Report", "description": "Current inventory value by category and warehouse", "lastGenerated": "2024-06-06" },
+        { "id": "r-2", "name": "Low Stock Report", "description": "Items below minimum stock threshold", "lastGenerated": "2024-06-06" },
+        { "id": "r-3", "name": "Stock Movement Report", "description": "Stock in/out transactions for selected period", "lastGenerated": "2024-06-05" }
+      ]
+    },
+    {
+      "id": "sales-reports",
+      "name": "Sales Reports",
+      "reports": [
+        { "id": "r-4", "name": "Sales Summary", "description": "Daily, weekly and monthly sales breakdown", "lastGenerated": "2024-06-06" },
+        { "id": "r-5", "name": "Customer Ledger", "description": "Outstanding balances by customer", "lastGenerated": "2024-06-05" }
+      ]
+    },
+    {
+      "id": "purchase-reports",
+      "name": "Purchase Reports",
+      "reports": [
+        { "id": "r-6", "name": "Purchase Summary", "description": "Procurement spend analysis", "lastGenerated": "2024-06-06" },
+        { "id": "r-7", "name": "Vendor Performance", "description": "Delivery and quality metrics by vendor", "lastGenerated": "2024-06-04" }
+      ]
+    },
+    {
+      "id": "financial-reports",
+      "name": "Financial Reports",
+      "reports": [
+        { "id": "r-8", "name": "Trial Balance", "description": "Account balances as of date", "lastGenerated": "2024-06-06" },
+        { "id": "r-9", "name": "Profit & Loss", "description": "Income statement for period", "lastGenerated": "2024-06-06" },
+        { "id": "r-10", "name": "Balance Sheet", "description": "Assets, liabilities and equity snapshot", "lastGenerated": "2024-06-01" }
+      ]
+    }
+  ],
+  "analytics": {
+    "inventoryTurnover": 4.2,
+    "grossMargin": 54.8,
+    "orderFulfillmentRate": 96.2,
+    "vendorOnTimeRate": 92.4
+  }
+}

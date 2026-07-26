@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Encode Sans'),
+    local('Encode Sans'),
+    url('/fonts/Encode_Sans/EncodeSansNormal-400-Regular.ttf')
+      format('truetype');
+}
+@font-face {
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 500; /* Medium */
+  src:
+    local('Encode Sans Medium'),
+    local('Encode Sans Medium'),
+    url('/fonts/Encode_Sans/EncodeSansNormal-500-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 600; /* Semi-Bold */
+  src:
+    local('Encode Sans SemiBold'),
+    local('Encode Sans SemiBold'),
+    url('/fonts/Encode_Sans/EncodeSansNormal-600-SemiBold.ttf')
+      format('truetype');
+}
+@font-face {
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 700; /* Bold */
+  src:
+    local('Encode Sans Bold'),
+    local('Encode Sans Bold'),
+    url('/fonts/Encode_Sans/EncodeSansNormal-700-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 800; /* Extra-Bold */
+  src:
+    local('Encode Sans Extra Bold'),
+    local('Encode Sans Extra Bold'),
+    url('/fonts/Encode_Sans/EncodeSansNormal-800-ExtraBold.ttf')
+      format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Poppins'),
+    local('Poppins-Regular'),
+    url('http://fonts.gstatic.com/s/poppins/v1/TDTjCH39JjVycIF24TlO-Q.ttf')
+      format('truetype');
+}

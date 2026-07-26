@@ -1,0 +1,9 @@
+{
+  "title": "Payments",
+  "subtitle": "Receipts and payment tracking",
+  "payments": [
+    { "id": "pay-1", "reference": "RCP-2024-0882", "party": "FlexoPrint Ltd", "type": "Receipt", "amount": 9200, "method": "Bank Transfer", "date": "2024-06-05", "status": "Completed" },
+    { "id": "pay-2", "reference": "PAY-2024-0441", "party": "Starlight Chemicals", "type": "Payment", "amount": 8500, "method": "Cheque", "date": "2024-06-04", "status": "Completed" },
+    { "id": "pay-3", "reference": "RCP-2024-0881", "party": "PrintMax Industries", "type": "Receipt", "amount": 3200, "method": "Cash", "date": "2024-06-03", "status": "Pending" }
+  ]
+}

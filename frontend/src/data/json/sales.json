@@ -1,0 +1,55 @@
+{
+  "title": "Sales Orders",
+  "subtitle": "Manage sales, POS billing and customer orders",
+  "stats": [
+    { "label": "Today's Sales", "value": "Rs 24,850" },
+    { "label": "Open Orders", "value": 12 },
+    { "label": "Pending Delivery", "value": 7 },
+    { "label": "Monthly Revenue", "value": "Rs 412,600" }
+  ],
+  "orders": [
+    {
+      "id": "so-1",
+      "orderNumber": "SO-2024-1142",
+      "customer": "PrintMax Industries",
+      "items": 3,
+      "totalAmount": 4850,
+      "tax": 17,
+      "orderDate": "2024-06-06",
+      "deliveryDate": "2024-06-08",
+      "status": "Processing"
+    },
+    {
+      "id": "so-2",
+      "orderNumber": "SO-2024-1141",
+      "customer": "FlexoPrint Ltd",
+      "items": 5,
+      "totalAmount": 9200,
+      "tax": 17,
+      "orderDate": "2024-06-05",
+      "deliveryDate": "2024-06-07",
+      "status": "Delivered"
+    },
+    {
+      "id": "so-3",
+      "orderNumber": "SO-2024-1140",
+      "customer": "ColorTech Solutions",
+      "items": 2,
+      "totalAmount": 3200,
+      "tax": 5,
+      "orderDate": "2024-06-04",
+      "deliveryDate": "2024-06-06",
+      "status": "Invoiced"
+    }
+  ],
+  "customers": [
+    { "id": "c-1", "name": "PrintMax Industries", "email": "orders@printmax.com", "phone": "+92 300 1234567", "totalOrders": 48, "outstanding": 12400 },
+    { "id": "c-2", "name": "FlexoPrint Ltd", "email": "sales@flexoprint.com", "phone": "+92 321 9876543", "totalOrders": 32, "outstanding": 0 },
+    { "id": "c-3", "name": "ColorTech Solutions", "email": "info@colortech.pk", "phone": "+92 333 5551234", "totalOrders": 21, "outstanding": 5600 }
+  ],
+  "posItems": [
+    { "id": "pos-1", "name": "Gandolla Premium Ink", "price": 380, "stock": 450 },
+    { "id": "pos-2", "name": "Dory Varnish", "price": 220, "stock": 1200 },
+    { "id": "pos-3", "name": "Vinyl + Lamination", "price": 80, "stock": 85 }
+  ]
+}

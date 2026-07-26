@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: talha-inventory-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: talha
+      POSTGRES_PASSWORD: talha
+      POSTGRES_DB: talha_inventory
+    ports:
+      - "5433:5432"
+    volumes:
+      - talha_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U talha -d talha_inventory"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  talha_pgdata:

@@ -1,0 +1,10 @@
+{
+  "title": "Customers",
+  "subtitle": "Customer profiles and order history",
+  "customers": [
+    { "id": "c-1", "name": "PrintMax Industries", "contact": "Ali Hassan", "email": "orders@printmax.com", "phone": "+92 300 1234567", "city": "Karachi", "totalOrders": 48, "totalRevenue": 186400, "outstanding": 12400, "status": "Active" },
+    { "id": "c-2", "name": "FlexoPrint Ltd", "contact": "Sara Ahmed", "email": "sales@flexoprint.com", "phone": "+92 321 9876543", "city": "Lahore", "totalOrders": 32, "totalRevenue": 124800, "outstanding": 0, "status": "Active" },
+    { "id": "c-3", "name": "ColorTech Solutions", "contact": "Imran Khan", "email": "info@colortech.pk", "phone": "+92 333 5551234", "city": "Islamabad", "totalOrders": 21, "totalRevenue": 68400, "outstanding": 5600, "status": "Active" },
+    { "id": "c-4", "name": "Digital Press Co.", "contact": "Fatima Malik", "email": "contact@digitalpress.pk", "phone": "+92 345 7778899", "city": "Karachi", "totalOrders": 15, "totalRevenue": 45200, "outstanding": 3200, "status": "Active" }
+  ]
+}

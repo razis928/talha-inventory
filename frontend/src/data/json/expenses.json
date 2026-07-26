@@ -1,0 +1,78 @@
+{
+  "title": "Expenses",
+  "subtitle": "Track operational and business expenses",
+  "stats": [
+    { "label": "Total Expenses (Month)", "value": "Rs 186,200" },
+    { "label": "Pending Approval", "value": "3" },
+    { "label": "Paid This Week", "value": "Rs 42,800" },
+    { "label": "Categories", "value": "8" }
+  ],
+  "expenses": [
+    {
+      "id": "exp-1",
+      "expenseNumber": "EXP-2024-0142",
+      "title": "Factory Electricity Bill",
+      "category": "Utilities",
+      "paidTo": "K-Electric",
+      "amount": 28500,
+      "date": "2024-06-05",
+      "paymentMethod": "Bank Transfer",
+      "status": "Paid"
+    },
+    {
+      "id": "exp-2",
+      "expenseNumber": "EXP-2024-0141",
+      "title": "Warehouse Maintenance",
+      "category": "Maintenance",
+      "paidTo": "TechFix Services",
+      "amount": 12400,
+      "date": "2024-06-04",
+      "paymentMethod": "Cash",
+      "status": "Paid"
+    },
+    {
+      "id": "exp-3",
+      "expenseNumber": "EXP-2024-0140",
+      "title": "Staff Salaries — June",
+      "category": "Salaries",
+      "paidTo": "Payroll Account",
+      "amount": 98000,
+      "date": "2024-06-01",
+      "paymentMethod": "Bank Transfer",
+      "status": "Paid"
+    },
+    {
+      "id": "exp-4",
+      "expenseNumber": "EXP-2024-0139",
+      "title": "Delivery Fuel Charges",
+      "category": "Transport",
+      "paidTo": "PSO Fuel Station",
+      "amount": 8600,
+      "date": "2024-06-03",
+      "paymentMethod": "Cash",
+      "status": "Pending"
+    },
+    {
+      "id": "exp-5",
+      "expenseNumber": "EXP-2024-0138",
+      "title": "Office Supplies",
+      "category": "Office",
+      "paidTo": "Stationery World",
+      "amount": 4200,
+      "date": "2024-06-02",
+      "paymentMethod": "Cheque",
+      "status": "Approved"
+    },
+    {
+      "id": "exp-6",
+      "expenseNumber": "EXP-2024-0137",
+      "title": "Machine Spare Parts",
+      "category": "Maintenance",
+      "paidTo": "MetalTech Corp",
+      "amount": 34500,
+      "date": "2024-05-28",
+      "paymentMethod": "Bank Transfer",
+      "status": "Pending"
+    }
+  ]
+}

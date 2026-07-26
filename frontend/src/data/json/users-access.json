@@ -1,0 +1,16 @@
+{
+  "title": "Users & Access",
+  "subtitle": "Manage system users and role-based permissions",
+  "users": [
+    { "id": "u-1", "name": "Alex Sterling", "email": "alex@manufacturepro.com", "role": "Admin", "department": "Management", "status": "Active", "lastLogin": "2024-06-06 09:30" },
+    { "id": "u-2", "name": "James Wilson", "email": "james@manufacturepro.com", "role": "Procurement Manager", "department": "Procurement", "status": "Active", "lastLogin": "2024-06-06 08:45" },
+    { "id": "u-3", "name": "Sarah Miller", "email": "sarah@manufacturepro.com", "role": "Operations Director", "department": "Operations", "status": "Active", "lastLogin": "2024-06-05 17:20" },
+    { "id": "u-4", "name": "Admin User", "email": "warehouse@manufacturepro.com", "role": "Warehouse Manager", "department": "Warehouse", "status": "Active", "lastLogin": "2024-06-06 07:15" },
+    { "id": "u-5", "name": "Rashid Ali", "email": "accounts@manufacturepro.com", "role": "Accountant", "department": "Finance", "status": "Inactive", "lastLogin": "2024-05-28 14:00" }
+  ],
+  "accessLogs": [
+    { "id": "al-1", "user": "Alex Sterling", "action": "Login", "module": "Dashboard", "timestamp": "2024-06-06 09:30", "ip": "192.168.1.10" },
+    { "id": "al-2", "user": "James Wilson", "action": "Created PO", "module": "Purchase Orders", "timestamp": "2024-06-06 08:50", "ip": "192.168.1.15" },
+    { "id": "al-3", "user": "Admin User", "action": "Stock Adjustment", "module": "Inventory", "timestamp": "2024-06-06 07:20", "ip": "192.168.1.22" }
+  ]
+}

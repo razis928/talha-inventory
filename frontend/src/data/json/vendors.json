@@ -1,0 +1,62 @@
+{
+  "title": "Vendor Management",
+  "subtitle": "Supplier profiles, ledger and performance tracking",
+  "vendors": [
+    {
+      "id": "v-1",
+      "name": "Starlight Chemicals",
+      "code": "SC",
+      "category": "Ink Supplier",
+      "leadTime": "2.4 Days",
+      "qualityScore": 4.9,
+      "onTimeDelivery": 98.5,
+      "totalValue": 142500,
+      "outstanding": 12450,
+      "status": "Preferred",
+      "rating": 5
+    },
+    {
+      "id": "v-2",
+      "name": "Bulk Pack Solutions",
+      "code": "BP",
+      "category": "Packaging",
+      "leadTime": "5.1 Days",
+      "qualityScore": 4.2,
+      "onTimeDelivery": 91.2,
+      "totalValue": 89200,
+      "outstanding": 4820,
+      "status": "Standard",
+      "rating": 4
+    },
+    {
+      "id": "v-3",
+      "name": "MetalTech Corp",
+      "code": "MT",
+      "category": "Raw Materials",
+      "leadTime": "9.8 Days",
+      "qualityScore": 3.1,
+      "onTimeDelivery": 76.4,
+      "totalValue": 34100,
+      "outstanding": 890,
+      "status": "Under Review",
+      "rating": 3
+    },
+    {
+      "id": "v-4",
+      "name": "Industrial Logistics Ltd",
+      "code": "IL",
+      "category": "Logistics",
+      "leadTime": "1.2 Days",
+      "qualityScore": 4.5,
+      "onTimeDelivery": 95.0,
+      "totalValue": 28400,
+      "outstanding": 0,
+      "status": "Preferred",
+      "rating": 5
+    }
+  ],
+  "purchaseHistory": [
+    { "id": "ph-1", "vendor": "Starlight Chemicals", "poNumber": "PO-2024-0892", "amount": 12450, "date": "2024-06-05", "status": "Pending" },
+    { "id": "ph-2", "vendor": "Bulk Pack Solutions", "poNumber": "PO-2024-0891", "amount": 4820, "date": "2024-06-04", "status": "Approved" }
+  ]
+}

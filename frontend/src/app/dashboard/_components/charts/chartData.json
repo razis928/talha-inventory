@@ -1,0 +1,318 @@
+{
+  "cashFlow": [
+    {
+      "month": "January",
+      "value": 10
+    },
+    {
+      "month": "February",
+      "value": 10
+    },
+    {
+      "month": "March",
+      "value": 8
+    },
+    {
+      "month": "April",
+      "value": 1
+    },
+    {
+      "month": "May",
+      "value": 6
+    },
+    {
+      "month": "June",
+      "value": 0
+    }
+  ],
+  "insurance": [
+    {
+      "month": "January",
+      "value": 0
+    },
+    {
+      "month": "February",
+      "value": 5
+    },
+    {
+      "month": "March",
+      "value": 4
+    },
+    {
+      "month": "April",
+      "value": 7
+    },
+    {
+      "month": "May",
+      "value": 1
+    },
+    {
+      "month": "June",
+      "value": 2
+    }
+  ],
+  "performanceChart": [
+    {
+      "month": "December",
+      "financialStability": 100
+    },
+    {
+      "month": "January",
+      "financialStability": 200
+    },
+    {
+      "month": "February",
+      "financialStability": 500
+    },
+    {
+      "month": "March",
+      "financialStability": 200
+    },
+    {
+      "month": "April",
+      "financialStability": 400
+    }
+  ],
+  "taskStatus": [
+    {
+      "month": "Jan",
+      "data": [
+        {
+          "name": "Declined",
+          "value": 10,
+          "fill": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Approved",
+          "value": 30,
+          "fill": "hsl(var(--chart-4))"
+        }
+      ]
+    },
+    {
+      "month": "Feb",
+      "data": [
+        {
+          "name": "Declined",
+          "value": 20,
+          "fill": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Approved",
+          "value": 30,
+          "fill": "hsl(var(--chart-4))"
+        }
+      ]
+    },
+    {
+      "month": "Mar",
+      "data": [
+        {
+          "name": "Declined",
+          "value": 20,
+          "fill": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Approved",
+          "value": 30,
+          "fill": "hsl(var(--chart-4))"
+        }
+      ]
+    },
+    {
+      "month": "Apr",
+      "data": [
+        {
+          "name": "Declined",
+          "value": 20,
+          "fill": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Approved",
+          "value": 30,
+          "fill": "hsl(var(--chart-4))"
+        }
+      ]
+    },
+    {
+      "month": "May",
+      "data": [
+        {
+          "name": "Declined",
+          "value": 20,
+          "fill": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Approved",
+          "value": 30,
+          "fill": "hsl(var(--chart-4))"
+        }
+      ]
+    },
+    {
+      "month": "Jun",
+      "data": [
+        {
+          "name": "Declined",
+          "value": 20,
+          "fill": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Approved",
+          "value": 30,
+          "fill": "hsl(var(--chart-4))"
+        }
+      ]
+    },
+    {
+      "month": "Jul",
+      "data": [
+        {
+          "name": "Declined",
+          "value": 20,
+          "fill": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Approved",
+          "value": 30,
+          "fill": "hsl(var(--chart-4))"
+        }
+      ]
+    },
+    {
+      "month": "Aug",
+      "data": [
+        {
+          "name": "Declined",
+          "value": 20,
+          "fill": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Approved",
+          "value": 30,
+          "fill": "hsl(var(--chart-4))"
+        }
+      ]
+    },
+    {
+      "month": "Sep",
+      "data": [
+        {
+          "name": "Declined",
+          "value": 20,
+          "fill": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Approved",
+          "value": 30,
+          "fill": "hsl(var(--chart-4))"
+        }
+      ]
+    },
+    {
+      "month": "Oct",
+      "data": [
+        {
+          "name": "Declined",
+          "value": 20,
+          "fill": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Approved",
+          "value": 30,
+          "fill": "hsl(var(--chart-4))"
+        }
+      ]
+    },
+    {
+      "month": "Nov",
+      "data": [
+        {
+          "name": "Declined",
+          "value": 20,
+          "fill": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Approved",
+          "value": 30,
+          "fill": "hsl(var(--chart-4))"
+        }
+      ]
+    },
+    {
+      "month": "Dec",
+      "data": [
+        {
+          "name": "Declined",
+          "value": 10,
+          "fill": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Approved",
+          "value": 90,
+          "fill": "hsl(var(--chart-4))"
+        }
+      ]
+    }
+  ],
+  "vendors": [
+    {
+      "name": "Vendor 1",
+      "unpaid_balance": 10,
+      "z_score": 0.2,
+      "date": "2022-07-01"
+    }
+  ],
+  "account_reciveables": [
+    {
+      "user": {
+        "name": "test",
+        "email": "test@test.com",
+        "role": "CEO",
+        "avatar": "https://i.pravatar.cc/300"
+      },
+      "taxes": 20,
+      "balance": 10,
+      "recived": 503,
+      "status": "Completed"
+    },
+    {
+      "user": {
+        "name": "test",
+        "email": "test3@test.com",
+        "role": "CFO",
+        "avatar": "https://i.pravatar.cc/300"
+      },
+      "taxes": 20,
+      "balance": 140,
+      "recived": 503,
+      "status": "Cancelled"
+    }
+  ],
+  "account_payables": [
+    {
+      "invoice_date": "2022-07-01",
+      "due_date": "2022-07-01",
+      "vendor_name": "Vendor 1",
+      "description": "Vendor 1 description",
+      "invoice_number": 3,
+      "amount": 40,
+      "status": "paid"
+    },
+    {
+      "invoice_date": "2022-07-01",
+      "due_date": "2022-07-01",
+      "vendor_name": "Vendor 2",
+      "description": "Vendor 2 description",
+      "invoice_number": 3,
+      "amount": 50,
+      "status": "unpaid"
+    }
+  ],
+  "report": {
+    "net_income": 10,
+    "total_liabilities": 10,
+    "budget": 10,
+    "equity": 10
+  }
+}

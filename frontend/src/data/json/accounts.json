@@ -1,0 +1,35 @@
+{
+  "title": "Accounts & Finance",
+  "subtitle": "Financial management and reporting",
+  "stats": [
+    { "label": "Cash Balance", "value": "Rs 84,200" },
+    { "label": "Bank Balance", "value": "Rs 412,800" },
+    { "label": "Receivables", "value": "Rs 68,400" },
+    { "label": "Payables", "value": "Rs 42,100" }
+  ],
+  "chartOfAccounts": [
+    { "id": "coa-1", "code": "1000", "name": "Cash in Hand", "type": "Asset", "balance": 84200 },
+    { "id": "coa-2", "code": "1100", "name": "Bank Account", "type": "Asset", "balance": 412800 },
+    { "id": "coa-3", "code": "1200", "name": "Accounts Receivable", "type": "Asset", "balance": 68400 },
+    { "id": "coa-4", "code": "2000", "name": "Accounts Payable", "type": "Liability", "balance": 42100 },
+    { "id": "coa-5", "code": "4000", "name": "Sales Revenue", "type": "Income", "balance": 412600 },
+    { "id": "coa-6", "code": "5000", "name": "Cost of Goods Sold", "type": "Expense", "balance": 186200 }
+  ],
+  "journalEntries": [
+    { "id": "je-1", "entryNo": "JE-2024-0442", "date": "2024-06-06", "description": "Sales invoice SO-2024-1142", "debit": 4850, "credit": 4850, "status": "Posted" },
+    { "id": "je-2", "entryNo": "JE-2024-0441", "date": "2024-06-05", "description": "Purchase order PO-2024-0892", "debit": 12450, "credit": 12450, "status": "Posted" }
+  ],
+  "trialBalance": {
+    "totalDebit": 575400,
+    "totalCredit": 575400,
+    "asOf": "2024-06-06"
+  },
+  "profitLoss": {
+    "revenue": 412600,
+    "cogs": 186200,
+    "grossProfit": 226400,
+    "expenses": 98400,
+    "netProfit": 128000,
+    "period": "Jan — Jun 2024"
+  }
+}
