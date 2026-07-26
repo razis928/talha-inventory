@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, Plus, Trash2 } from 'lucide-react';
+import { ArrowLeft, Plus, Printer, Trash2 } from 'lucide-react';
 import ScreenFrame from './ScreenFrame';
 import RecordModal from './RecordModal';
 import { InventoryItem } from '../types';
@@ -8,6 +8,10 @@ import { CustomerApi, CustomerInput } from '../api/customers';
 import { DispatchInput } from '../api/dispatch';
 import { CUSTOMER_FIELDS } from '../config/entityFields';
 import { useErp } from '../context/ErpContext';
+import {
+  downloadIndividualGatePassPdf,
+  printIndividualGatePass,
+} from '../utils/gatePassPrint';
 
 interface LineDraft {
   key: string;
@@ -1016,12 +1020,13 @@ export default function JobOrderFormPage({
                         <th>Date</th>
                         <th>Items</th>
                         <th>Vehicle / Driver</th>
+                        <th />
                       </tr>
                     </thead>
                     <tbody>
                       {jobDispatches.length === 0 ? (
                         <tr>
-                          <td colSpan={4} className="erp-muted py-6 text-center">
+                          <td colSpan={5} className="erp-muted py-6 text-center">
                             No gate passes yet for this job order.
                           </td>
                         </tr>
@@ -1037,6 +1042,19 @@ export default function JobOrderFormPage({
                             </td>
                             <td className="text-xs">
                               {[gp.vehicle_no, gp.driver].filter(Boolean).join(' / ') || '—'}
+                            </td>
+                            <td className="text-right">
+                              <button
+                                type="button"
+                                className="erp-btn-ghost p-1"
+                                title="Print / PDF gate pass"
+                                onClick={() => {
+                                  printIndividualGatePass(gp, record ? [record] : []);
+                                  void downloadIndividualGatePassPdf(gp, record ? [record] : []);
+                                }}
+                              >
+                                <Printer size={14} />
+                              </button>
                             </td>
                           </tr>
                         ))

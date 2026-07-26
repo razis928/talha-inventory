@@ -5,6 +5,10 @@ import ScreenFrame from '../components/ScreenFrame';
 import { useErp } from '../context/ErpContext';
 import { DispatchApi } from '../api/dispatch';
 import { matchesSearch } from '../utils/filter';
+import {
+  downloadIndividualGatePassPdf,
+  printIndividualGatePass,
+} from '../utils/gatePassPrint';
 
 const PAGE_SIZE = 6;
 
@@ -14,7 +18,7 @@ interface DispatchScreenProps {
 }
 
 export default function DispatchScreen({ searchQuery, onOpenAdd }: DispatchScreenProps) {
-  const { dispatches } = useErp();
+  const { dispatches, jobOrders } = useErp();
   const [page, setPage] = useState(1);
 
   const filtered = useMemo(() => {
@@ -32,13 +36,18 @@ export default function DispatchScreen({ searchQuery, onOpenAdd }: DispatchScree
     );
   }, [dispatches, searchQuery]);
 
+  const handlePrint = (row: DispatchApi) => {
+    printIndividualGatePass(row, jobOrders);
+    void downloadIndividualGatePassPdf(row, jobOrders);
+  };
+
   const columns: Column<DispatchApi>[] = [
     {
       key: 'pass_number',
       header: 'Gate Pass #',
       render: (r) => <span className="erp-strong">{r.pass_number}</span>,
     },
-    { key: 'job_number', header: 'Job No', render: (r) => r.job_number },
+    { key: 'job_number', header: 'PO #', render: (r) => r.job_number },
     { key: 'customer_name', header: 'Customer', render: (r) => r.customer_name },
     {
       key: 'lines',
@@ -71,7 +80,8 @@ export default function DispatchScreen({ searchQuery, onOpenAdd }: DispatchScree
         page={page}
         pageSize={PAGE_SIZE}
         onPageChange={setPage}
-        showActions={false}
+        showActions
+        onPrint={handlePrint}
         keyExtractor={(row) => String(row.id)}
       />
     </ScreenFrame>
