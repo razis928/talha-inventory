@@ -1,4 +1,4 @@
-"""Lightweight column ensures for SQLite when Alembic is not in use."""
+"""Legacy SQLite column patches (no-op on PostgreSQL). Prefer Alembic for schema changes."""
 
 from sqlalchemy import text
 from sqlalchemy.engine import Engine

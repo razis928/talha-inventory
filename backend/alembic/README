@@ -1,0 +1,10 @@
+Alembic migrations for Talha Inventory.
+
+Generate a new revision (from backend/):
+  .venv/bin/alembic revision --autogenerate -m "describe change"
+
+Apply migrations:
+  .venv/bin/alembic upgrade head
+
+Stamp an existing DB that already matches models (skip DDL):
+  .venv/bin/alembic stamp head
