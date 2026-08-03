@@ -29,6 +29,11 @@ import CustomersScreen from './erp/screens/CustomersScreen';
 import CustomerDetailScreen from './erp/screens/CustomerDetailScreen';
 import VendorDetailScreen from './erp/screens/VendorDetailScreen';
 import UsersAccessScreen from './erp/screens/UsersAccessScreen';
+import BlankScreen from './erp/screens/BlankScreen';
+
+/** Locked (blank white screen) by default. Set VITE_BLANK_SCREEN=false to activate the app. */
+const BLANK_SCREEN_ENABLED =
+  String(import.meta.env.VITE_BLANK_SCREEN ?? 'true').toLowerCase() !== 'false';
 
 function ErpApp() {
   const {
@@ -370,6 +375,18 @@ function ErpApp() {
 }
 
 export default function App() {
+  useEffect(() => {
+    if (!BLANK_SCREEN_ENABLED) return;
+    // Any deep link / path → stay on blank lock page
+    if (window.location.pathname !== '/' || window.location.search || window.location.hash) {
+      window.history.replaceState(null, '', '/');
+    }
+  }, []);
+
+  if (BLANK_SCREEN_ENABLED) {
+    return <BlankScreen />;
+  }
+
   return (
     <ThemeProvider>
       <ErpProvider>
